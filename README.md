@@ -13,30 +13,30 @@ A simple, self-hosted Markdown note-taking app built with [VueJS](https://vuejs.
 
 ## How to run?
 1. `git clone https://github.com/n1try/mininote`
-2. In root directory: `npm install`
+2. In ROOT directory: `npm install`
 3. And again in _mininote-frontend_ directory: `npm install`
 4. Adapt `config.js` to your needs (e.g. set web server port)
 5. In _mininote-frontend_ directory: `npm run build`
-6. In root directory: `npm start`
+6. In ROOT directory: `npm start`
 
 ## How to run with Docker?
 1. `git clone https://github.com/n1try/mininote`
 2. `docker build -t mininote .`
 3. `docker run -d -p 3000:3000 -v /your-dir-of-choice:/app/data mininote`
---> MiniNote will listen on port 3000 and persist data to `/your-dir-of-choice` on your host system using a shared volume.
+--> MININOTE will listen on port 3000 and persist data to `/your-dir-of-choice` on your host system using a shared volume.
 
 ## Use HTTPS for backend
 1. Open `config.js`
-2. Edit the `HTTPS_KEY` and `HTTPS_CERT` field, and insert the file locations at which your private key and site certifications are stored.
-3. Launch the backend server
---> To switch back to the HTTP server, nullify either field and relaunch again.
+2. EDIT the `HTTPS_KEY` and `HTTPS_CERT` field, and INSERT the file locations at which your private key and site certifications are stored.
+3. LAUNCH the BACKEND server
+--> To SWITCH BACK to the HTTP server, nullify either field and relaunch again.
 
 ## Todo
 This project is still under development. The following features are about to be implemented. Feel free to contribute.
 * Tests
-* Improved data validation
+* IMPROVE data validation
 * More REST
-* Ability to rename notebooks and notes
+* ABILITY to rename notebooks and notes
 
 ## License
 MIT @ [Ferdinand Mütsch](https://ferdinand-muetsch.de)
